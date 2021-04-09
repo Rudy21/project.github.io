@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My First Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #1abc9c;
+  color: rgb(15, 15, 15);
+}
+
+
+
+.fav__img {
+  background-color: rgb(124, 72, 111);
+  width: 100%;
+  height: 50%;
+  padding: 80px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 137px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 50px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgb(124, 72, 111);
+  padding: 20px;
+}
+}
+</style>
+</head>
+<body align="center";>
+
+<div class="header">
+  <h1><b>My First Project</b></h1>
+</div>
+<div id="navbar">
+  <a class="active" href="#about">About me</a>
+  <a href="#creation">My Creation</a>
+  <a href="#social"> My Social Account</a>
+  <a href="#map">My College</a>
+  <a href="#form">Registration Form</a>
+</div>
+
+
+</div>
+    <section id="about">
+    <h2>About Me</h2>
+    <h3><b>My Favourite Audio and video</b></h3>
+      <div class="fav__img">
+          <img src="C:\Users\Others\Desktop\rudra assignment\vivek\img\music.jpg" alt="" width="30%" height= "20%">  
+          <audio controls autoplay muted>
+              <source src="C:\Users\Others\Desktop\rudra assignment\vivek\music\music.mpeg." type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      
+        <video width="30%" height="20%" poster="C:\Users\Others\Desktop\rudra assignment\vivek\img\video.jpg" controls>
+            <source src="C:\Users\Others\Desktop\rudra assignment\vivek\video\video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+         </video>
+
+    </div>
+    </section>
+    <section id="creation">
+    <h2>My Creation</h2>
+    <div>
+      <a href="calc.html"><img src="C:\Users\Others\Desktop\rudra assignment\vivek\img\calc.png" alt="personal site 1" title="calculator" width="30%" height="20%"></a>
+  
+
+  
+      <a href="login.html"><img src="C:\Users\Others\Desktop\rudra assignment\vivek\img\login.png" alt="login" title="Login form" ></a>
+  </div>
+    </section>
+  <section id="social">
+  <div class="fav__img">
+    <h2>View My Social Accounts </h2>
+    <a href="https://m.facebook.com/profile.php?id=100015722087373"><img src="C:\Users\Others\Desktop\rudra assignment\vivek\img\facebook icon.png"  title="My Facebook Account" width="30%" height="20%"></a> 
+    <a href="https://instagram.com/vivekkkkkk0?igshid=14cds4de238fs"><img src="C:\Users\Others\Desktop\rudra assignment\vivek\img\intagram icon.jpg"  title="My Instagram Account" width="28%" height="20%"></a>
+    </div>
+    </section>
+    <section id="map">
+    <h1>To View my college <a href="mapping.html" alt="map" title="map">click here</a> </h1>
+    <h2><strong>OR</strong></h2>
+    <img src="C:\Users\Others\Desktop\rudra assignment\vivek\img\kes college.jpg" alt="MY COLLEGE" usemap="#kesmap" width="800" height="500" >
+
+<map name="kesmap">
+  <area shape="rect" coords=5,4,792,791" alt="Computer" href="https://www.google.com/maps/dir//Kandivali+Education+Society,+S+M+Road+Daulat+Nagar,+Kandivali+West,+Mumbai,+Maharashtra+400067/@19.2213244,72.81072,11z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3be7b0da49808e99:0x35e3431cd87fb3ad!2m2!1d72.8468254!2d19.2020964!3e0">
+</map>
+    <h1>CLICK ON THIS IMAGE</h1>
+   
+</section>
+<section id="form">
+  <div class="fav__img">
+  
+
+<h3>Registration Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
+
+  </div>
+</section>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  
+</body>
+</html>
